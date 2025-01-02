@@ -1,1 +1,4 @@
-import pygame\n\n# Entry point\nprint('Hello, Garden of Need')
+import pygame
+
+# Entry point
+print('Hello, Garden of Need')
