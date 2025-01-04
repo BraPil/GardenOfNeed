@@ -85,13 +85,13 @@ def main():
             if event.type == pygame.QUIT:
                 running = False
             elif event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_LEFT:
+                if event.key == pygame.K_LEFT or event.key == pygame.K_a:  # Move left
                     player.move(-1, 0, TERRAIN_WIDTH, TERRAIN_HEIGHT)
-                elif event.key == pygame.K_RIGHT:
+                elif event.key == pygame.K_RIGHT or event.key == pygame.K_d:  # Move right
                     player.move(1, 0, TERRAIN_WIDTH, TERRAIN_HEIGHT)
-                elif event.key == pygame.K_UP:
+                elif event.key == pygame.K_UP or event.key == pygame.K_w:  # Move up
                     player.move(0, -1, TERRAIN_WIDTH, TERRAIN_HEIGHT)
-                elif event.key == pygame.K_DOWN:
+                elif event.key == pygame.K_DOWN or event.key == pygame.K_s:  # Move down
                     player.move(0, 1, TERRAIN_WIDTH, TERRAIN_HEIGHT)
 
         screen.fill((0, 0, 0))
